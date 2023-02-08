@@ -23,10 +23,9 @@ quotes = driver.find_elements('xpath', '//span[@class="text"]')
 
 data = []
 for q in quotes:
-    t = q.text
-    data.append(t)
+    data.append(q.text)
+    
+driver.quit()
 
 df = pd.DataFrame(data, columns=['Quotes'])
 st.dataframe(df)
-
-driver.quit()
