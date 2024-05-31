@@ -1,4 +1,4 @@
-streamlit==1.17.0
+streamlit
 selenium
 webdriver-manager
 seleniumbase
